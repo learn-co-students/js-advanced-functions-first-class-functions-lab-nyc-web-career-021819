@@ -16,14 +16,12 @@ const createFareMultiplier = function (value) {
     return fare * value
   };
 };
-function fareDoubler(num) {
-  return num * 2;
-}
 
-function fareTripler(num) {
-  return num * 3
-}
+const fareDoubler = createFareMultiplier(2)
 
-function fetchSpecifiedDrivers(arrayOfDrivers, fn) {
-  return fn(arrayOfDrivers);
-}
+const fareTripler = createFareMultiplier(3)
+
+
+function fetchSpecifiedDrivers(driversArray, fn) {
+  return fn(driversArray);
+};
